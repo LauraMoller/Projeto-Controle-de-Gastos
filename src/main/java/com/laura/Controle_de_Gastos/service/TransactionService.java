@@ -23,8 +23,8 @@ public class TransactionService {
                 .orElseThrow(() -> new IllegalArgumentException("Transação não encontrada"));
     }
 
-    public void save(Transaction transacao) {
-        repository.save(transacao);
+    public void save(Transaction transaction) {
+        repository.save(transaction);
     }
 
     public void delete(Long id) {

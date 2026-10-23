@@ -12,7 +12,7 @@ public class Transaction {
     private Long id;
     private String description;
     private BigDecimal amount;
-    private LocalDate data;
+    private LocalDate date;
     @Enumerated(EnumType.STRING)
     private TransactionType type;
     private String category;
@@ -29,8 +29,8 @@ public class Transaction {
         return description;
     }
 
-    public LocalDate getData() {
-        return data;
+    public LocalDate getDate() {
+        return date;
     }
 
     public String getCategory() {
@@ -49,15 +49,15 @@ public class Transaction {
         this.type = type;
     }
 
-    public void setData(LocalDate data) {
-        this.data = data;
+    public void setDate(LocalDate date) {
+        this.date = date;
     }
 
     public BigDecimal getAmount() {
         return amount;
     }
 
-    public void setAmout(BigDecimal amount) {
+    public void setAmount(BigDecimal amount) {
         this.amount = amount;
     }
 
