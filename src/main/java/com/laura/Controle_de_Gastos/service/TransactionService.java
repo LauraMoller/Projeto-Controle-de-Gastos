@@ -1,17 +1,16 @@
 package com.laura.Controle_de_Gastos.service;
 
 import com.laura.Controle_de_Gastos.model.Transaction;
-import com.laura.Controle_de_Gastos.repository.TransacaoRepository;
+import com.laura.Controle_de_Gastos.repository.TransactionRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
-public class TransacaoService {
-    private final TransacaoRepository repository;
+public class TransactionService {
+    private final TransactionRepository repository;
 
-    public TransacaoService(TransacaoRepository repository) {
+    public TransactionService(TransactionRepository repository) {
         this.repository = repository;
     }
 

@@ -11,7 +11,7 @@ public class Transaction {
     @GeneratedValue
     private Long id;
     private String description;
-    private BigDecimal value;
+    private BigDecimal amount;
     private LocalDate data;
     @Enumerated(EnumType.STRING)
     private TransactionType type;
@@ -53,15 +53,15 @@ public class Transaction {
         this.data = data;
     }
 
-    public BigDecimal getValue() {
-        return value;
+    public BigDecimal getAmount() {
+        return amount;
     }
 
-    public void setValue(BigDecimal value) {
-        this.value = value;
+    public void setAmout(BigDecimal amount) {
+        this.amount = amount;
     }
 
-    public void setDescricao(String description) {
+    public void setDescription(String description) {
         this.description = description;
     }
 }
